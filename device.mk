@@ -45,6 +45,11 @@ PRODUCT_PACKAGES += \
 
 TARGET_HAS_UDFPS := true
 
+
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
+
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
 
