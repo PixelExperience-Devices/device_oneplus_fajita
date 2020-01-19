@@ -7,4 +7,5 @@ service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.i
     class hal
     user system
     group system
+    priority -20
     shutdown critical
