@@ -28,5 +28,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/oneplus/common
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_fajita
+TARGET_RECOVERY_DEVICE_MODULES := libinit_fajita
+
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
