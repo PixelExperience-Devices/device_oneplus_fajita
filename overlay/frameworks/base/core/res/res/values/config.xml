@@ -398,4 +398,7 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">80px</dimen>
     <dimen name="status_bar_height_landscape">80px</dimen>
+
+    <!-- Whether device has notification LED -->
+    <bool name="config_hasNotificationLed">false</bool>
 </resources>

@@ -25,9 +25,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
-# Kernel
-TARGET_KERNEL_CONFIG := enchilada_defconfig
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/oneplus/common
 
