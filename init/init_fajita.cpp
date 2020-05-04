@@ -57,7 +57,7 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override("ro.build.description", "OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys");
 
     // privapp permisison control
     property_override("ro.control_privapp_permissions", "log");
