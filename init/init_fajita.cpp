@@ -56,8 +56,8 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 void vendor_load_properties()
 {
     // fingerprint
-    property_override("ro.build.description", "OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys");
+    property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys");
 
     // privapp permisison control
     property_override("ro.control_privapp_permissions", "log");
