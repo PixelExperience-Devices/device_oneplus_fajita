@@ -35,13 +35,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita \
-    vendor.oneplus.fingerprint.extension@1.0 \
-    vendor.oneplus.hardware.display@1.0
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/common
+    lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus
 
 # Inherit from oneplus sdm845-common
 $(call inherit-product, device/oneplus/sdm845-common/common.mk)
