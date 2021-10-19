@@ -39,7 +39,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita \
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita \
     vendor.oneplus.fingerprint.extension@1.0 \
     vendor.oneplus.hardware.display@1.0
 

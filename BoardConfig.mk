@@ -22,11 +22,8 @@ DEVICE_PATH := device/oneplus/fajita
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
-# FOD
-TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_fajita
-
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+# UDFPS
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus_fajita
 
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk

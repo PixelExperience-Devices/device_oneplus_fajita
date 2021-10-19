@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019 The LineageOS Project
+// Copyright (C) 2021 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,26 +14,34 @@
 // limitations under the License.
 
 cc_binary {
-    relative_install_path: "hw",
+    name: "android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita",
     defaults: ["hidl_defaults"],
-    name: "lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita",
-    init_rc: ["lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita.rc"],
-    srcs: ["service.cpp", "FingerprintInscreen.cpp"],
+    init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita.rc"],
+    vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita.xml"],
+    relative_install_path: "hw",
+    srcs: [
+        "service.cpp",
+        "BiometricsFingerprint.cpp",
+    ],
     shared_libs: [
-        "libbase",
-        "libhardware",
-        "libhidlbase",
+        "libcutils",
         "liblog",
+        "libhidlbase",
+        "libhardware",
         "libutils",
-        "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "android.hardware.biometrics.fingerprint@2.1",
+        "android.hardware.biometrics.fingerprint@2.2",
+        "android.hardware.biometrics.fingerprint@2.3",
         "//device/oneplus/common:vendor.oneplus.fingerprint.extension@1.0",
         "//device/oneplus/common:vendor.oneplus.hardware.display@1.0",
     ],
+    system_ext_specific: true,
 }
 
 cc_library_static {
-    name: "libfod_extension.oneplus_fajita",
-    srcs: ["FodExtension.cpp"],
+    name: "libudfps_extension.oneplus_fajita",
+    whole_static_libs: ["//device/oneplus/common:vendor.oneplus.hardware.display@1.0"],
+    srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"
     ],
