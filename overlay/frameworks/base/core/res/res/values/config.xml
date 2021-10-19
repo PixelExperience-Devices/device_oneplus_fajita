@@ -401,4 +401,19 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">80px</dimen>
     <dimen name="status_bar_height_landscape">80px</dimen>
+
+     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
+     <integer-array name="config_udfps_sensor_props" translatable="false" >
+      <!--
+        <item>sensorLocationX</item>
+        <item>sensorLocationY</item>
+        <item>sensorRadius</item>
+      -->
+        <item>539</item>
+        <item>2061</item>
+        <item>95</item>
+     </integer-array>
+
+     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
+    <integer name="config_udfps_illumination_transition_ms">0</integer>
 </resources>
