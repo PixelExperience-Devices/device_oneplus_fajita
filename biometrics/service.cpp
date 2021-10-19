@@ -38,14 +38,14 @@ int main() {
 
     status_t status = service->registerAsService();
     if (status != OK) {
-        LOG(ERROR) << "Cannot register Biometrics 2.3 HAL service.";
+        /* LOG(ERROR) << "Cannot register Biometrics 2.3 HAL service."; */
         return 1;
     }
 
-    LOG(INFO) << "Biometrics 2.3 HAL service ready.";
+    /* LOG(INFO) << "Biometrics 2.3 HAL service ready."; */
 
     joinRpcThreadpool();
 
-    LOG(ERROR) << "Biometrics 2.3 HAL service failed to join thread pool.";
+    /* LOG(ERROR) << "Biometrics 2.3 HAL service failed to join thread pool."; */
     return 1;
 }
