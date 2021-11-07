@@ -1,3 +1,6 @@
+#Audio
+vendor/etc/firmware/tfa98xx.cnt
+
 # Camera
 system_ext/lib64/libCameraMDMHelper.so
 system_ext/lib64/vendor.oneplus.hardware.camera@1.0.so
@@ -90,7 +93,6 @@ vendor/lib/libVDBlurlessAPI_v2.so
 vendor/lib/libVDDualCameraBlurlessAPI.so
 vendor/lib/libVDHDRAPI.so
 vendor/lib/lib_EagleEye.so
-vendor/lib/lib_bokehshap.so
 vendor/lib/lib_oneplus_facebeauty.so
 vendor/lib/lib_oneplus_watermark.so
 vendor/lib/libarcsoft_dualcam_bokeh_api.so
@@ -143,3 +145,18 @@ vendor/lib64/vendor.oneplus.hardware.camera@1.0.so
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
 
 
+
+
+#Fingerprint
+# Fingerprint
+vendor/lib/hw/goodix.fod.sdm845.so
+vendor/lib/fp_hal_extension.so
+vendor/lib/libgf_ud_hal.so
+vendor/lib/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/hw/goodix.fod.sdm845.so
+vendor/lib64/fp_hal_extension.so
+vendor/lib64/libgf_ud_hal.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+
+# Touchscreen
+vendor/etc/firmware/tp/fw_synaptics_18801.img
