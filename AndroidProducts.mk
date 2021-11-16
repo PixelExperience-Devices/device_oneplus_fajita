@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_fajita.mk
+    $(LOCAL_DIR)/syberia_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_fajita-user \
-    ssos_fajita-userdebug \
-    ssos_fajita-eng
+    syberia_fajita-user \
+    syberia_fajita-userdebug \
+    syberia_fajita-eng

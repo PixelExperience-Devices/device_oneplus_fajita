@@ -22,9 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
 # Inherit some common ShapeShiftOS stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+$(call inherit-product, vendor/syberia/common.mk)
 
-PRODUCT_NAME := ssos_fajita
+PRODUCT_NAME := syberia_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -35,6 +35,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus6T \
     PRODUCT_NAME=OnePlus6T \
-    PRIVATE_BUILD_DESC="OnePlus6T-user 9 PKQ1.180716.001 1812260627 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SP1A.211105.003 7757856 release-keys"
 
-BUILD_FINGERPRINT := OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1812260627:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys
