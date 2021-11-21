@@ -35,7 +35,7 @@ cc_binary {
         "//hardware/oneplus:vendor.oneplus.fingerprint.extension@1.0",
         "//hardware/oneplus:vendor.oneplus.hardware.display@1.0",
     ],
-    system_ext_specific: true,
+    vendor: true,
 }
 
 cc_library_static {
