@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_fajita.mk
+    $(LOCAL_DIR)/aosp_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_fajita-user \
-    syberia_fajita-userdebug \
-    syberia_fajita-eng
+    aosp_fajita-user \
+    aosp_fajita-userdebug \
+    aosp_fajita-eng
