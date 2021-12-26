@@ -1,8 +1,0 @@
-on init
-    chown system system /sys/class/drm/card0-DSI-1/op_friginer_print_hbm
-    chmod 0660 /sys/class/drm/card0-DSI-1/op_friginer_print_hbm
-
-service fps_hal.oneplus_fajita /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.oneplus_fajita
-    class late_start
-    user system
-    group system input uhid
