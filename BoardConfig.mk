@@ -21,6 +21,7 @@ DEVICE_PATH := device/oneplus/fajita
 
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := OnePlus6T,oneplus6t,fajita
+TARGET_BOARD_INFO_FILE := device/oneplus/fajita/board-info.txt
 
 # FOD
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oneplus:libudfps_extension.oneplus
