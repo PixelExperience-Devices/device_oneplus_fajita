@@ -11,6 +11,9 @@ odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
+# ADSP modules
+vendor/lib/rfsa/adsp/dirac_resource.dar
+
 # Audio
 vendor/etc/firmware/tfa98xx.cnt
 
@@ -27,6 +30,16 @@ vendor/lib/hw/camera.qcom.so
 vendor/lib64/hw/goodix.fod.sdm845.so
 vendor/lib64/fp_hal_extension.so
 vendor/lib64/libgf_ud_hal.so
+
+# Graphics (Adreno firmware)
+vendor/firmware/a630_zap.b01
+vendor/firmware/a630_zap.elf
+vendor/firmware/a630_zap.mdt
+
+# IPA firmware
+vendor/firmware/ipa_fws.b01
+vendor/firmware/ipa_fws.elf
+vendor/firmware/ipa_fws.mdt
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
