@@ -2,12 +2,12 @@
   {
     "repository": "device_oneplus_sdm845-common",
     "target_path": "device/oneplus/sdm845-common",
-    "branch"      : "thirteen"
+    "branch"      : "fourteen"
   },
   {
     "repository"  : "vendor_oneplus_fajita",
     "target_path" : "vendor/oneplus/fajita",
-    "branch"      : "thirteen",
+    "branch"      : "fourteen",
     "remote"      : "pixel-devices-blobs"
   }
 ]
